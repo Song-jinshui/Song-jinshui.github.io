@@ -22,17 +22,17 @@
     var CONFIG = {"hostname":"song-jinshui.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="#前言  很荣幸能陪你走过这样一段路，以后你不管是大红大紫还是泯然众人，我都记得在今年的这个暮冬到初春，我见证过你眼里有光并也认为前路有光的时刻。祝你，永远一帆风顺，永远是少年。">
+  <meta name="description" content="#前言  很荣幸能陪你走过这样一段路，以后你不管是大红大紫还是泯然众人，我都记得在今年的这个暮冬到初春，我见证过你眼里有光并也认为前路有光的时刻。祝你，永远一帆风顺，永远是少年。Who lives in the pineapple and the sea.  #第一章 智能巡航无人机的设计方案本文设计的智能巡航无人机要实现稳定飞行，定点巡航，航拍视频在无人机控制APP实时显示，无人机控制APP远程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Lemon-Tree">
 <meta property="og:url" content="https://song-jinshui.github.io/2021/06/09/Lemon-Tree/index.html">
 <meta property="og:site_name" content="澈丹小和尚">
-<meta property="og:description" content="#前言  很荣幸能陪你走过这样一段路，以后你不管是大红大紫还是泯然众人，我都记得在今年的这个暮冬到初春，我见证过你眼里有光并也认为前路有光的时刻。祝你，永远一帆风顺，永远是少年。">
+<meta property="og:description" content="#前言  很荣幸能陪你走过这样一段路，以后你不管是大红大紫还是泯然众人，我都记得在今年的这个暮冬到初春，我见证过你眼里有光并也认为前路有光的时刻。祝你，永远一帆风顺，永远是少年。Who lives in the pineapple and the sea.  #第一章 智能巡航无人机的设计方案本文设计的智能巡航无人机要实现稳定飞行，定点巡航，航拍视频在无人机控制APP实时显示，无人机控制APP远程">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-06-09T15:37:28.000Z">
-<meta property="article:modified_time" content="2021-06-09T16:45:47.882Z">
+<meta property="article:modified_time" content="2021-06-09T16:53:19.224Z">
 <meta property="article:author" content="金水">
-<meta property="article:tag" content="Who lives in the pinapple and the sea.">
+<meta property="article:tag" content="宋金水毕业设计-智能巡航无人的设计">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://song-jinshui.github.io/2021/06/09/Lemon-Tree/">
@@ -203,7 +203,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-10 00:45:47" itemprop="dateModified" datetime="2021-06-10T00:45:47+08:00">2021-06-10</time>
+                <time title="修改时间：2021-06-10 00:53:19" itemprop="dateModified" datetime="2021-06-10T00:53:19+08:00">2021-06-10</time>
               </span>
 
           
@@ -219,9 +219,11 @@
       
         <p>#前言</p>
 <blockquote>
-<p>很荣幸能陪你走过这样一段路，以后你不管是大红大紫还是泯然众人，我都记得在今年的这个暮冬到初春，我见证过你眼里有光并也认为前路有光的时刻。祝你，永远一帆风顺，永远是少年。</p>
+<p>很荣幸能陪你走过这样一段路，以后你不管是大红大紫还是泯然众人，我都记得在今年的这个暮冬到初春，我见证过你眼里有光并也认为前路有光的时刻。祝你，永远一帆风顺，永远是少年。<br>Who lives in the pineapple and the sea.</p>
 </blockquote>
-
+<p>#第一章 智能巡航无人机的设计方案<br>本文设计的智能巡航无人机要实现稳定飞行，定点巡航，航拍视频在无人机控制APP实时显示，无人机控制APP远程控制无人机，调用云服务器的API实现人脸识别和人脸比对等功能。为实现以上功能，提出智能巡航无人机的设计方案，方案包含无人机飞行和控制模块、基于4G网络的图像采集与数据通信模块以及无人机控制APP三部分。</p>
+<h2 id="1-1-系统总体框架"><a href="#1-1-系统总体框架" class="headerlink" title="1.1 系统总体框架"></a>1.1 系统总体框架</h2><p>智能巡航无人机的框架如图1-1所示。该无人机由无人机飞行和控制模块、基于4G网络的图像采集与数据通信模块以及无人机控制APP三部分组成。无人机飞行和控制模块是智能巡航无人机的主体框架，包含无人机飞行控制硬件和无人机飞行控制程序，能够实现无人机的稳定飞行。基于4G网络的图像采集与数据通信模块包含摄像头、Jetson Nano、TD-LTE无线数据终端等硬件和图像采集与视频推流程序、控制指令传输程序，具有推流航拍视频流、上传航拍图像至华为OBS、传输无人机控制指令等功能。无人机控制APP是用户和无人机的交互工具，具有实时播放无人机的航拍视频，控制无人机飞行，调用华为云服务器的API实现人脸识别和人脸比对等功能。<br>整体设计方案为：无人机飞行和控制模块使用基于APM-2.8的无人机飞行控制硬件，采用基于Ardupliot的无人机飞行控制程序。基于4G网络的图像采集与数据通信模块通过TD-LTE无线数据终端连入4G网络。Jetson Nano执行图像采集与视频推流程序，读取摄像头的视频流，将其推流至华为云并抽取视频流中的帧上传至华为OBS，无人机控制APP访问华为云将视频流拉流，完成无人机控制APP实时查看无人机航拍画面功能，无人机控制APP访问华为OBS获取摄像头拍摄的图像，调用华为云的人脸识别API，识别画面中的人脸，访问人脸识别库，完成人脸比对功能。无人机控制APP将无人机控制指令上传至华为物联网平台，Jetson Nano执行控制指令传输程序获取华为物联网平台推送的无人机控制指令，再通过串口转发至无人机飞行和控制模块，完成无人机控制APP控制无人机飞行功能。无人机控制APP引用高德地图的SDK，可以获得某地的经纬度，通过上述无人机控制指令的传送方式将巡航目的地的经纬度发送至无人机，完成定点巡航功能。</p>
+<h2 id="1-2-智能巡航无人机的硬件设计"><a href="#1-2-智能巡航无人机的硬件设计" class="headerlink" title="1.2 智能巡航无人机的硬件设计"></a>1.2 智能巡航无人机的硬件设计</h2><h3 id="1-2-1-无人机飞行和控制模块的工作原理"><a href="#1-2-1-无人机飞行和控制模块的工作原理" class="headerlink" title="1.2.1 无人机飞行和控制模块的工作原理"></a>1.2.1 无人机飞行和控制模块的工作原理</h3>
     </div>
 
     
@@ -230,7 +232,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Who-lives-in-the-pinapple-and-the-sea/" rel="tag"># Who lives in the pinapple and the sea.</a>
+              <a href="/tags/%E5%AE%8B%E9%87%91%E6%B0%B4%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-%E6%99%BA%E8%83%BD%E5%B7%A1%E8%88%AA%E6%97%A0%E4%BA%BA%E7%9A%84%E8%AE%BE%E8%AE%A1/" rel="tag"># 宋金水毕业设计-智能巡航无人的设计</a>
           </div>
 
         
@@ -294,6 +296,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-%E7%B3%BB%E7%BB%9F%E6%80%BB%E4%BD%93%E6%A1%86%E6%9E%B6"><span class="nav-number">1.</span> <span class="nav-text">1.1 系统总体框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-%E6%99%BA%E8%83%BD%E5%B7%A1%E8%88%AA%E6%97%A0%E4%BA%BA%E6%9C%BA%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%AE%BE%E8%AE%A1"><span class="nav-number">2.</span> <span class="nav-text">1.2 智能巡航无人机的硬件设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-1-%E6%97%A0%E4%BA%BA%E6%9C%BA%E9%A3%9E%E8%A1%8C%E5%92%8C%E6%8E%A7%E5%88%B6%E6%A8%A1%E5%9D%97%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="nav-number">2.1.</span> <span class="nav-text">1.2.1 无人机飞行和控制模块的工作原理</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
